@@ -77,6 +77,7 @@ let
     (loadModule ./programs/kakoune.nix { })
     (loadModule ./programs/keychain.nix { })
     (loadModule ./programs/khal.nix { })
+    (loadModule ./programs/khard.nix { })
     (loadModule ./programs/kitty.nix { })
     (loadModule ./programs/lesspipe.nix { })
     (loadModule ./programs/lsd.nix { })
