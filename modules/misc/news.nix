@@ -1505,6 +1505,13 @@ in
           may be necessary as new modules are added.
         '';
       }
+      {
+        time = "2020-04-26T13:46:28+00:00";
+        condition = hostPlatform.isLinux;
+        message = ''
+          A new module is available: 'services.pulseeffects'
+        '';
+      }
     ];
   };
 }
