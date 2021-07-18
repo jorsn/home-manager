@@ -22,6 +22,8 @@ let
 
   allModules = [
     (loadModule ./accounts/email.nix { })
+    (loadModule ./accounts/calendar.nix { })
+    (loadModule ./accounts/contacts.nix { })
     (loadModule ./config/i18n.nix { condition = hostPlatform.isLinux; })
     (loadModule ./files.nix { })
     (loadModule ./home-environment.nix { })
@@ -86,6 +88,8 @@ let
     (loadModule ./programs/jq.nix { })
     (loadModule ./programs/kakoune.nix { })
     (loadModule ./programs/keychain.nix { })
+    (loadModule ./programs/khal.nix { })
+    (loadModule ./programs/khard.nix { })
     (loadModule ./programs/kitty.nix { })
     (loadModule ./programs/lazygit.nix { })
     (loadModule ./programs/lesspipe.nix { })
@@ -134,6 +138,7 @@ let
     (loadModule ./programs/tmux.nix { })
     (loadModule ./programs/topgrade.nix { })
     (loadModule ./programs/urxvt.nix { })
+    (loadModule ./programs/vdirsyncer.nix { })
     (loadModule ./programs/vim.nix { })
     (loadModule ./programs/vscode.nix { })
     (loadModule ./programs/vscode/haskell.nix { })
@@ -207,6 +212,7 @@ let
     (loadModule ./services/udiskie.nix { })
     (loadModule ./services/unclutter.nix { })
     (loadModule ./services/unison.nix { condition = hostPlatform.isLinux; })
+    (loadModule ./services/vdirsyncer.nix { condition = hostPlatform.isLinux; })
     (loadModule ./services/window-managers/awesome.nix { })
     (loadModule ./services/window-managers/bspwm/default.nix { condition = hostPlatform.isLinux; })
     (loadModule ./services/window-managers/i3-sway/i3.nix { })
